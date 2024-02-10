@@ -1,0 +1,27 @@
+.btn-primary{
+   background: #6418C3;
+}
+.icon-color{
+    color: #6418C3;
+}
+input::placeholder{
+    font-size: 16px;
+    text-align: start;
+    font-weight: 600;
+    color: #AAAAAA;
+}
+.input-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 0px;
+}
+input[type="search"]{
+    border-radius: 14px;
+    width: 400px;
+    height: 50px;
+}
+button{
+    border-radius: 73.98px;
+
+}

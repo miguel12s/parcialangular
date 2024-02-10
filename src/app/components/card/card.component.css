@@ -1,0 +1,56 @@
+.subtitle{
+    font-size: 14px;
+}
+.badge{
+    height: 25px;
+}
+.opciones{
+    top: 15px;
+    right: 15px;
+    z-index:9999;
+    display: grid;
+
+    i{
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+}
+.foto{
+    max-width: 130.33px;
+    max-height: 114.24px;
+    top: 191.94px;
+    left: 145.74px;
+    border-radius: 8px;
+    
+}
+.color{
+    color: #6418C3;
+    font-size: 1.0rem;
+    
+}
+.bg-options{
+    color: #AAAAAA;
+}
+
+img{
+    
+    border-radius: 8px;
+    max-width: 8.125rem;
+}
+
+.card{
+    
+    width: 18rem;
+    height: 18rem;
+    margin-top: 0.35rem;
+
+}
+.badge{
+    border-radius: 12px;
+    padding: .71rem;
+}
+
+.subtitle{
+    color: #AAAAAA;
+}

@@ -1,0 +1,39 @@
+<div class="position-relative">
+
+  <div class="card mb-3">
+    <div class="card-body text-center">
+      <!-- <p *ngIf="usuario.length===0">No existen usuarios relacionados con tu busqueda</p> -->
+    
+      <img
+        class="img-fluid foto"
+        [src]="usuario.foto"
+        class="img-fluid rouded-circle"
+        [alt]="usuario.nombres"
+      />
+      <h5 class="card-title text-center fw-bold mt-3">{{ usuario.nombres }}</h5>
+      <p class="card-description text-center my-2 text-muted subtitle">
+        {{ usuario.profesion }}
+      </p>
+    </div>
+    <div class="mx-3 mb-3 d-flex align-items-center">
+      <span
+        class="badge bg-light d-flex justify-content-center align-items-center"
+      >
+        <i class="bi bi-telephone-fill color bg-icon"></i>
+      </span>
+      <p class="mb-0 ms-2">{{ usuario.telefono }}</p>
+    </div>
+    <div class="mx-3 mb-3 d-flex align-items-center">
+      <span
+        class="badge bg-light d-flex justify-content-center align-items-center"
+      >
+        <i class="bi bi-envelope-fill color"></i>
+      </span>
+      <p class="mb-0 ms-2">{{ usuario.correo }}</p>
+    </div>
+    <div class="position-absolute opciones gap-3">
+      <i class="bi bi-trash bg-options" (click)="delete(usuario.id)"></i>
+      <i class="bi bi-pencil-square bg-options" (click)="push()"></i>
+    </div>
+  </div>
+</div>

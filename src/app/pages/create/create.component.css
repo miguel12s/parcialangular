@@ -1,0 +1,12 @@
+.card{
+    height: 100%;
+    width: auto;
+}
+
+.btn-primary{
+    background: #6418C3;
+ }
+
+input::placeholder{
+    color: #aaaaaa;
+}

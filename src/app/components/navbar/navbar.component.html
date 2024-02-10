@@ -1,0 +1,17 @@
+
+<nav class="navbar">
+    <div class="container-fluid mx-5">
+        <div class="d-flex flex-column">
+      <h1 class="navbar-brand fs-3 fw-bold">Contacts</h1>
+      <p class="text-secondary my-2">Mi lista de conctactos en angular</p>
+    </div>
+    <div class="d-flex flex-row">  
+    <form class="d-flex position-relative" role="search">
+        <i class="bi bi-search fs-4 icon-color input-icon" ></i>
+        <input class="form-control me-5 px-5 py-3 " (input)="onChange($event)" type="search" placeholder="Buscar contacto" aria-label="Search">
+        
+      </form>
+      <button (click)="push()" class="btn btn-primary fs-6 px-5 py-3" >Nuevo contacto</button>
+    </div>
+    </div>
+  </nav>
