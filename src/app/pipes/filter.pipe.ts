@@ -3,11 +3,11 @@ import { User } from '../interfaces/user';
 
 @Pipe({
   name: 'filter',
-  standalone: true
+  standalone: true,
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(users: User[],word:string, ...args: unknown[]): User[] {  
+  transform(users: User[],word:string): User[] {  
 console.log(word)
 if(word!==""){
     const user:User[]=users.filter(

@@ -20,8 +20,7 @@ export class CardComponent {
   private service = inject(UserService)
 
   delete(id: number) {
-    this.service.delete(id)
-
+this.service.delete(id)    
   }
 
   push() {

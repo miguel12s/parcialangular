@@ -41,8 +41,10 @@ change() {
 push(user:User){  
   this.create=false
   this.user=user
+  this.usuarios=this.service.userss
 
 }
+
 
 
 
