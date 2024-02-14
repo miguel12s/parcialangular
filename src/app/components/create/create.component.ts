@@ -3,12 +3,11 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { UserService } from '../../services/user.service';
 import { CommonModule } from '@angular/common';
 import { User } from '../../interfaces/user';
-import { FormatNumberPipe } from '../../pipes/format-number.pipe';
 
 @Component({
   selector: 'app-create',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule,FormatNumberPipe],
+  imports: [ReactiveFormsModule,CommonModule],
   templateUrl: './create.component.html',
   styleUrl: './create.component.css'
 })

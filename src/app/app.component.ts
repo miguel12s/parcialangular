@@ -1,13 +1,15 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, createComponent, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { CardComponent } from './components/card/card.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
-import { User } from './interfaces/user';
-import { CreateComponent } from './pages/create/create.component';
-import { UserService } from './services/user.service';
+import { CardComponent } from './components/card/card.component';
 import { UpdateComponent } from './components/update/update.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { UserService } from './services/user.service';
+import { User } from './interfaces/user';
+import { CreateComponent } from './components/create/create.component';
+
+
 
 @Component({
   selector: 'app-root',
