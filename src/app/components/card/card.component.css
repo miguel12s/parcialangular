@@ -4,6 +4,8 @@
 .badge{
     height: 25px;
 }
+
+
 .opciones{
     top: 15px;
     right: 15px;
@@ -41,7 +43,7 @@ img{
 
 .card{
     
-    width: 18rem;
+    width: 17.5rem;
     height: 18rem;
     margin-top: 0.35rem;
 margin-right: 15px;

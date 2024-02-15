@@ -1,8 +1,8 @@
 import { Component, Input, OnChanges, SimpleChanges, inject } from '@angular/core';
-import { User } from '../../interfaces/user';
+import { User } from '../../core/interfaces/user';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { UserService } from '../../services/user.service';
 import { CommonModule } from '@angular/common';
+import { UserService } from '../../core/services/user.service';
 
 @Component({
   selector: 'app-update',
@@ -28,7 +28,7 @@ export class UpdateComponent implements OnChanges {
     this.superheroCreate.patchValue({
       nombres:this.user.nombres,
       profesion:this.user.profesion,
-      telefono:this.service.reverseFormatPhone(this.user.telefono),
+      telefono:this.user.telefono,
       correo:this.user.correo
     })    
   }
@@ -38,8 +38,8 @@ export class UpdateComponent implements OnChanges {
     return this.fb.group(
       {
         nombres: ['', [Validators.required,Validators.minLength(10),Validators.maxLength(30)]],
-        profesion: ['', [Validators.required,Validators.minLength(7),Validators.maxLength(30)]],
-        telefono: ['', [Validators.required,Validators.min(3000000000),Validators.max(3250000000)]],
+        profesion: ['', [Validators.required,Validators.minLength(6),Validators.maxLength(30)]],
+        telefono: ['', [Validators.required,Validators.min(3000000000),Validators.max(3510000000)]],
         correo:['',[Validators.pattern('.*@(unibarranquilla\.edu\.co|itsa\.edu\.co)$')]],
         foto:['',Validators.required]
       },
@@ -52,8 +52,7 @@ export class UpdateComponent implements OnChanges {
   onSubmit(){
    const user:User= this.superheroCreate.value
    user.foto=this.imageSrc
-   const phone=user.telefono
-   user.telefono=this.service.formatPhone(phone.toString())
+   
     
 
     this.service.editUser(this.superheroCreate.value,this.user.id)

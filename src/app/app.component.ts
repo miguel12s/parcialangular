@@ -4,12 +4,11 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './components/card/card.component';
 import { UpdateComponent } from './components/update/update.component';
-import { FilterPipe } from './pipes/filter.pipe';
-import { UserService } from './services/user.service';
-import { User } from './interfaces/user';
+
+import { User } from './core/interfaces/user';
 import { CreateComponent } from './components/create/create.component';
-
-
+import { UserService } from './core/services/user.service';
+import { FilterPipe } from './core/pipes/filter.pipe';
 
 @Component({
   selector: 'app-root',

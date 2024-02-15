@@ -12,13 +12,13 @@
               <label class="form-label fw-bold" for="exampleInputPassword1" >Profesion</label>
               <input formControlName="profesion" type="text" class="form-control" id="exampleInputPassword1" placeholder="Profesion del contacto">
             </div>
-            <div class="alert alert-danger" *ngIf="superheroCreate.get('profesion')?.hasError('minlength') && superheroCreate.get('profesion')?.value!=='' ">La profesion debe tener un minimo de caracteres de 7</div>
+            <div class="alert alert-danger" *ngIf="superheroCreate.get('profesion')?.hasError('minlength') && superheroCreate.get('profesion')?.value!=='' ">La profesion debe tener un minimo de caracteres de 6</div>
             <div class="alert alert-danger" *ngIf="superheroCreate.get('profesion')?.hasError('maxlength') && superheroCreate.get('profesion')?.value!=='' ">La profesion debe tener un minimo de caracteres de 30</div>
             <div class="">
                 <label class="form-label fw-bold" for="exampleInputPassword1" >Numero de telefono</label>
                 <input type="text" formControlName="telefono" class="form-control" id="exampleInputPassword1" placeholder="Numero telefonico del contacto">
               </div>
-              <div class="alert alert-danger" *ngIf="superheroCreate.get('telefono')?.hasError('min') || superheroCreate.get('telefono')?.hasError('max') && superheroCreate.get('telefono')?.value!=='' ">El telefono debe encontrarse dentro del rango de 3000000000 a 3300000000</div>
+              <div class="alert alert-danger" *ngIf="superheroCreate.get('telefono')?.hasError('min') || superheroCreate.get('telefono')?.hasError('max') && superheroCreate.get('telefono')?.value!=='' ">El telefono debe encontrarse dentro del rango de 3000000000 a 3510000000</div>
               <div class="">
                 <label class="form-label fw-bold" for="exampleInputPassword1" >Correo electronico</label>
                 <input type="email" class="form-control" id="exampleInputPassword1" formControlName="correo" placeholder="Correo electronico del contacto">
